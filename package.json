@@ -1,0 +1,16 @@
+{
+  "name": "ksap",
+  "version": "1.0.0",
+  "description": "KSAP demo",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Srinjoy Santra",
+  "license": "ISC",
+  "dependencies": {
+    "animejs": "^2.2.0",
+    "express": "^4.16.3"
+  }
+}
