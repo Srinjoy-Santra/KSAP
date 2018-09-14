@@ -1,0 +1,95 @@
+<html>
+   <head>
+        <title>Society page</title>
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+         <style>
+        /*.flex-container {
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: row;
+          background-color: DodgerBlue;
+        }
+
+        .flex-container > div {
+          background-color: #f1f1f1;
+          margin: 10px;
+          padding: 20px;
+          font-size: 30px;
+        }*/
+             .col{
+             min-width:300px;
+             }
+             .out-card {
+            flex: 0 0 auto;
+              }
+             .scrollable{
+                 display: flex;
+                  flex-wrap: nowrap;
+                overflow-x: auto;
+                 
+             }
+</style>
+   </head>
+   <h2 class="center blue-text name">Society Page</h2>
+    <body>
+      <div class="row">
+         <div class="col s12 m12 l6 center">
+          <h3>Description:</h3>
+          <p class="description"></p>
+          </div>
+          <div class="col s12 m12 l6 center">
+          <h3>Timings:</h3>
+          <p class="timing"></p>
+          </div>
+      </div>    
+       <h3 class="center yellow-text">Coordinators and Subcoordinators</h3>
+        <div class="scrollable row " id="coordinator-flex">
+            
+            <div class="col s12 m6 l1 out-card">
+              <div class="card">
+                <div class="card-image">
+                  <img src="img/karakalem_hande_ercel_by_serkanpainter-dawsitd.jpg">
+                  <span class="card-title">Just another sexy coordinator</span>
+                </div>
+                <div class="card-content">
+                  <p>How may I assist you?</p>
+                </div>
+                <div class="card-action">
+                  <a href="#">Facebook link</a>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+       <h3 class="center yellow-text">Faculty of Contact</h3>
+       <div class="scrollable row " id="faculty-flex">
+            
+            <div class="col s12 m6 l1 out-card">
+              <div class="card">
+                <div class="card-image">
+                  <img src="img/karakalem_hande_ercel_by_serkanpainter-dawsitd.jpg">
+                  <span class="card-title">Just another sexy coordinator</span>
+                </div>
+                <div class="card-content">
+                  <p>How may I assist you?</p>
+                </div>
+                <div class="card-action">
+                  <a href="#">Email id</a>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+       <h3 class="center orange-text">Upcoming events</h3>
+       <ul id="events">
+           
+       </ul>
+       
+          
+  
+    <script src="js/society.js"></script>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+    </body>
+</html>

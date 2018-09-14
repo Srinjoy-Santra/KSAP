@@ -2,6 +2,7 @@
    <head>
         <title>KSAP login</title>
         <link rel="stylesheet" type="text/css" href="css/login.css">
+         <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">-->
    </head>
    
     <body>
@@ -11,8 +12,9 @@
     <div class="left">
       <div class="login">Login</div>
       <div class="eula">By logging in you agree to the ridiculously long terms that you didn't bother to read</div>
+      <img class="eula-img" src="img/kiit.jpg" alt="kiit-logo" style="height: 200px; width: auto;">
     </div>
-    <div class="right swiper-container">
+    <div class="right">
       <svg viewBox="0 0 320 300">
         <defs>
           <linearGradient
@@ -35,37 +37,77 @@
         </defs>
         <path d="m 40,120.00016 239.99984,-3.2e-4 c 0,0 24.99263,0.79932 25.00016,35.00016 0.008,34.20084 -25.00016,35 -25.00016,35 h -239.99984 c 0,-0.0205 -25,4.01348 -25,38.5 0,34.48652 25,38.5 25,38.5 h 215 c 0,0 20,-0.99604 20,-25 0,-24.00396 -20,-25 -20,-25 h -190 c 0,0 -20,1.71033 -20,25 0,24.00396 20,25 20,25 h 168.57143" />
       </svg>
-      <div class="swiper-pagination">
-		</div>
-      <div class="swiper-wrapper">
-			<div class="login-form swiper-slide">
-                <label for="email">Email/Roll</label>
-                <input type="email" id="email">
+    <!--<ul id="tabs-swipe" class="tabs">
+        <li class="tab col s3"><a href="#swipe-1">Test 1</a></li>
+        <li class="tab col s3"><a href="#swipe-2">Test 2</a></li>
+        
+    </ul>-->
+   <!-- <div id="swipe-1" class="col s12 login-form">
+        <label for="email">Email/Roll</label>
+                <input type="email" id="lemail">
                 <label for="password">Password</label>
-                <input type="password" id="password">
-                <input type="submit" id="submit" value="Submit">
-            </div>
-			<div class="register-form swiper-slide">
-                <label for="full-name">Full name</label>
+                <input type="password" id="lpassword">
+                <input type="submit" id="lsubmit" value="Submit">
+    </div>
+     <div id="swipe-2" class="col s12 register-form">
+         <label for="full-name">Full name</label>
                 <input type="text" id="full-name">
                 <label for="email">Email</label>
-                <input type="email" id="email">
+                <input type="email" id="remail">
                 <label for="roll">Roll</label>
                 <input type="number" id="roll" min="1500000" max="1900000">
                 <label for="password">Password</label>
-                <input type="password" id="password">
+                <input type="password" id="rpassword">
                 <label for="Repassword">Confirm Password</label>
                 <input type="password" id="cpassword">
-                <input type="submit" id="submit" value="Submit">
-            </div>
-		</div>
+                <input type="submit" id="lsubmit" value="Submit">
+     </div>-->
+     
       
-      <!---->
+      <!--<div class="swiper-wrapper">-->
+			<div class="login-form">
+                <label for="email">Email/Roll</label>
+                <input type="email" id="lemail">
+                <label for="password">Password</label>
+                <input type="password" id="lpassword">
+                <input type="submit" id="lsubmit" class="submit "value="Submit">
+                 <!-- Trigger/Open The Modal -->
+                <button type="button" id="register">New user?Register here!</button>
+                <!-- The Modal -->
+                <div id="regModal" class="modal">
+
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class="login" style="color: aliceblue">Register</div>
+                    <label for="full-name">Full name</label>
+                    <input type="text" id="full-name">
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+                    <label for="roll">Roll</label>
+                    <input type="number" id="roll" min="1500000" max="1900000">
+                    <label for="password">Password</label>
+                    <input type="password" id="password">
+                    <label for="Repassword">Confirm Password</label>
+                    <input type="password" id="cpassword">
+                    <input type="submit" class="butto " id="rsubmit" value="Submit">
+            </div>
+                  </div>
+
+                </div>
+            </div>
+			<!--<div class="register-form swiper-slide">
+                -->
+		<!--</div>-->
+    
     </div>
   </div>
-</div>
+
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>-->
     <script src="js/login.js"></script>
    
-    <script src="node_modules/animejs/anime.min.js"></script>
+    <script src="node_modules/animejs/anime.min.js">
+        </script>
+       
     </body>
 </html>

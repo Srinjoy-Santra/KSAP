@@ -39,7 +39,7 @@ body {
 @media (max-width: 767px) {
   .container {
     flex-direction: column;
-    height: 1530px;
+    height: 930px;
     width: 320px;
   }
 }
@@ -68,7 +68,12 @@ body {
   color: #b6a19e;
   font-size: 14px;
   line-height: 1.5;
-  margin: 40px;
+  margin: 40px 40px 40px;
+margin-bottom: 0px;
+}
+.eula-img {
+  margin-left: 40px;
+
 }
 .right {
   background: #474A59;
@@ -99,7 +104,7 @@ path {
 .login-form {
     
     margin: 40px;
-  position: absolute;
+    position: absolute;
     overflow: auto;
 }
 .register-form {
@@ -108,7 +113,7 @@ path {
 
 }
 label {
-  color:  #c2c2c5;
+  color:  #c2c2c5/*b6a19e*/;
   display: block;
   font-size: 14px;
   height: 16px;
@@ -128,91 +133,76 @@ input {
 input::-moz-focus-inner { 
   border: 0; 
 }
-#submit {
+
+#full-name:focus,
+#roll:focus,
+#password:focus,
+#cpassword:focus,
+#email:focus
+{
+    box-shadow: -8px 10px 0px -7px #67aeca, 8px 10px 0px -7px #67aeca;
+}
+.submit {
   color: #707075;
   margin-top: 40px;
   transition: color 300ms;
+
 }
-#submit:focus {
+.submit:focus {
   color: #f2f2f2;
 }
-#submit:active {
+.submit:active {
   color: #d0d0d2;
 }
 
-.swiper-container {
-	width: 100%;
-	height: 100%;
-	margin: 50px auto 0;
-
-	@media screen and (min-width: 800px) {
-		width: 70%;
-		margin-left: 15%;
-	}
+#register{
+    margin-top: 40px;
+    margin-left: 30px;
+    color: #6c6488;
+    font-weight: 700;
+    padding: 10px;
 }
 
-.swiper-slide {
-	background: #fff;
-	color: #333;
-	font-size: 1.8rem;
-	min-height: 300px;
-
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-/*.swiper-container-horizontal {
-	> .swiper-pagination {
-		top: 0;
-		bottom: auto;
-
-		.swiper-pagination-bullet {
-			margin: 0;
-		}
-	}
-}*/
-
-.active-mark {
-	background: #ffeb3b;
-	width: $tabs-header-width;
-	height: 4px;
-	position: absolute;
-	left: 0;
-	top: 52px;
-	transition: left 0.2s ease-out;
+/* Modal Content/Box */
+.modal-content {
+    background-color: #675682;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%; /* Could be more or less, depending on screen size */
 }
 
-.swiper-pagination-bullet {
-	background-color: #00D42B;
-	border-radius: 0;
-	box-sizing: border-box;
-	color: rgb(14, 137, 39);
-	cursor: pointer;
-	font-size: 1.6rem;
-	font-weight: normal;
-	opacity: 1;
-	height: 56px;
-	width: $tabs-header-width;
-
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-
-	text-align: center;
-	transition: font-weight 0.22s ease;
-
-	@include tabs;
-	/*&:first-of-type {
-		&.swiper-pagination-bullet-active {
-			~ .active-mark {
-				left: 0;
-			}
-		}
-	}*/
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
 }
 
-.swiper-pagination-bullet-active {
-	font-weight: bold;
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button,button{
+    border-radius: 30px;
+    border: 4px solid #67aeca ;
+    /*border-image-source: linear-gradient(to bottom right, #6bbaa7,#fba100);*/
 }
