@@ -34,7 +34,7 @@ for(var x=0;x<5;x++)
                   <span class="card-title">Just another sexy coordinator</span>
                 </div>
                 <div class="card-content">
-                  <p>How may I assist you?</p>
+                  <p  class="flow-text">How may I assist you?</p>
                 </div>
                 <div class="card-action">
                   <a href="#">Facebook link</a>
@@ -54,7 +54,7 @@ for(var x=0;x<5;x++)
                   <span class="card-title">Just another sexy coordinator</span>
                 </div>
                 <div class="card-content">
-                  <p>How may I assist you?</p>
+                  <p class="flow-text">How may I assist you?</p>
                 </div>
                 <div class="card-action">
                   <a href="#">Email id</a>
@@ -70,7 +70,7 @@ for(var x=0;x<5;x++)
     {
         let shade = 'lighten-'+events[x];
         let event = document.createElement("li");
-     event.classList.add('center','amber',shade);
+     event.classList.add('center','amber',shade,'flow-text');
         event.innerHTML = events[x]+'. Bragging rights';
         eventlist.appendChild(event);
     }
