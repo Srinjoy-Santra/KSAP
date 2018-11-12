@@ -14,7 +14,7 @@ for(var x=0;x<10;x++)
                       <p>Venue</p>
                     </div>
                     <div class="card-action">
-                      <a href="#">Society link</a>
+                      <a href="/society.html">Society link</a>
                       <a href="#">FB link</a>
                     </div>
                   
@@ -26,9 +26,7 @@ for(var x=0;x<10;x++)
 
 
 
-$(document).ready(function(){
-    $('.sidenav').sidenav();
-  });
+
 
 /*$(document).ready(function(){
     $('.carousel').carousel();
