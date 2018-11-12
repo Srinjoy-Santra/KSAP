@@ -18,7 +18,7 @@ for(var x=0;x<images.length;x++)
         col.classList.add('col','l3','m6','s12');
         society.push(new Society(images[x].toUpperCase().slice(0,-4),images[x],desc));
         
-        cardDiv = '<div class="card"><div class="card-image"><img src="http://ksac.kiit.ac.in/pix/societies/'+society[x].img+'"><span class="card-title white-text flow-text" style="font-size:50px;">'+society[x].name+'</span></div><div class="card-content"><p>'+society[x].desc+'</p></div><div class="card-action"><a href="#">Facebook page link</a><a href="society.html">Details link</a></div></div>';
+        cardDiv = '<div class="card"><div class="card-image"><img src="http://ksac.kiit.ac.in/pix/societies/'+society[x].img+'"><span class="card-title white-text flow-text" style="font-size:50px;">'+society[x].name+'</span></div><div class="card-content"><p>'+society[x].desc+'</p></div><div class="card-action"><a href="#">Facebook page link</a><a href="KSAP/society.html">Details link</a></div></div>';
 
         col.innerHTML=cardDiv;
         mainRow.appendChild(col);
