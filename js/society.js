@@ -51,7 +51,7 @@ for(var x=0;x<5;x++)
             `<div class="card">
                 <div class="card-image">
                   <img src="img/karakalem_hande_ercel_by_serkanpainter-dawsitd.jpg">
-                  <span class="card-title">Just another sexy coordinator</span>
+                  <span class="card-title">Venerated Faculty</span>
                 </div>
                 <div class="card-content">
                   <p class="flow-text">How may I assist you?</p>
